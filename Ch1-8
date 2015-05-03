@@ -1,0 +1,330 @@
+say "Hello, cupcake!"; = groovy language
+
+Combiled code
+- ready to run
+- often faster
+- source code is private
+- not cross-platform
+- inflexible
+- extra step 
+
+
+Intepreted code
+- cross-platform
+- simple to test
+- easier to debug
+- interpretation is required
+- often slower
+- source code is public 
+
+
+
+Intermediate code approach 
+- compile it part of the way (interpret it halfway), and then distribute this to people who need to run it (JIT compilation - byte code).
+
+
+
+Compiled code = c, C++, Obj C
+Intepreted code = PHP, JavaScript
+Hybrid = Java, C#, Python
+
+
+
+JavaScript = scripting language, completely different than Java
+ActionScript (used in Flash)
+VBScript (used in Microsoft apps)
+
+
+
+JavaScript
+- Limiting, but its easier to do for beginners. 
+- Case-sensitive language
+
+
+HTML = Hypertext Markup Language (not a programming language)
+
+variables = simple container
+
+
+
+variable = var (letters, numbers, $ and _ , boolean [true, false])
+ex. 
+var year; 
+year = 2015; 
+OR var year = 2015; 
+var year, month, day; 
+
+
+
+var phrase = "This is a simple phrase"; 
+alert(phrase.length);
+
+
+a+= = add one to the variable 'a'
+a-- = subtract one from the variable 'a'
+a += 1;  (+= is adding one)
+
+
+\n (special character) = this adds a new line 
+
+
+
+IF 
+
+if (condition) {
+	alert("It's true!");
+	// etc
+}
+
+Ex.
+if (a < 20) {
+	alert("It's true!");
+}
+
+Code block = parantheses, brackets, braces 
+
+
+=== strict equality sign (only to be used to check equality)
+
+&& AND = whole thing has to be true 
+|| OR = either has to be true 
+
+
+
+
+SWITCH
+- Checks each case to see which one works
+- 'break' jumps us out of the switch statement
+
+
+
+
+FUNCTIONS in JavaScript (Methods in Java)
+
+- Treat the block of code as one thing
+- Take codes and surround it with curly braces. 
+
+Ex. function ______ () {
+	// loops, If, etc. 
+}
+
+- If you create a function, you have to call it yourself. 
+- Best practice: define function before you call it. 
+
+
+- Recursion = Have a function call itself
+
+
+
+PARAMETERS 
+
+Parameters = () Defining a function
+
+
+Arguments = When calling the function, it passes the parameters (which is called 'argument')
+
+
+
+RETURN = calling out the parameters (last line of the function)
+
+
+
+(Local variable)
+Variable Scope = variables are only available inside the function
+
+
+(Global variable)
+- If you create the variables outside the function, then other functions can use it as well. 
+- If you call the variable outside of the function, just say (ex. x = 500) insie of the function.
+
+
+
+- You can create different files with separate functions in them, and later just call that particular script file in the code. 
+
+- Order of the script file called is important. 
+
+- Split up files are easier to work on.
+
+
+
+
+ITERATION = loop 
+
+WHILE example: 
+var a = 1; 
+while (a < 10) {
+	alert(a);
+	a++;
+} 
+	
+
+FOR example: 
+for (var i = 1; i < 10; i++) {
+	
+}
+
+For loops = setup  index, check condition, increment index 
+
+
+DO...WHILE 
+
+var a = 1; 
+do {
+	// our code
+	a++; 
+} while (a < 10);
+
+
+
+Concatenation = putting the numbers side by side. 
+
+
+
+STRING PROPERTIES
+
+METHODS (like functions that belong to a string)
+- Methods are functions that belong to an object 
+
+
+Ex.
+var phrase = "This is a string";
+alert(phrase.length);   // . is to call the property 
+
+
+Ex. 
+var str1 = "Hello";
+var str2 = "hello";
+
+if(str1.toLowerCase() == str2.toLowerCase() ) {
+	alert("Yes, equal");
+}
+
+
+
+.indexOf  = If it exists, where does it begin in the string? 
+
+Ex. 
+var phrase = "We want a groovy keyword";
+var position = phrase.indexOf("groovy");
+
+if (phrase.indexOf("DDDD") == -1) {
+	alert("That word does not occur.");
+}
+
+
+
+.lastIndexOf = gives us the last position of where it ends in the string
+
+
+slice = pulls a section out of a string 
+Ex. 
+var phrase = "Yet another phrase";
+var segment = phrase.slice(6, 11);
+
+
+.substring()
+.substr()
+
+
+
+
+EXPRESSIONS
+
+Create regular expressions
+
+var myRE = /hello/;
+// or
+var myRE = new RegExp("hello");
+
+
+new = creates a new object 
+
+- Once you create a regular expression, you have to test it. 
+
+var myString = "Does this sentence have hello?";
+if (myRE.test(myString) ) {
+	alert("Yes");
+}
+
+
+
+(Collections)
+
+ARRAYS = multiple values contained in one thing
+- Each value in an array is an element. 
+- Each value is called by their positioning number (ex. 1, 2, 3 - 0 is the start)
+
+
+Ex. 
+var multipleValues  = [ ];       // [] = array
+multipleValues[0] = 50;      // I want the element '0' to be set at 50.
+
+multipleValues[1] = 60; 
+
+multipleValues[2] = "hello"; 
+
+- All of the values are set at the index. 
+
+
+alert(multipleValues[2]);
+
+
+ARRAY (SHORT-HAND METHOD) 
+- Array is an object
+
+Ex. 
+var multipleValues = [50, 60, "hello"];
+						0  1    2
+
+
+alaert(myArray.length) = how many characters are in the array 
+alert(myArray.reverse());
+alert(myArray.sort());
+alert(myArray.join());
+.pop
+myArray.push(123); 
+
+
+- JavaScript Array Reference Guide is a good place to find information 
+
+http://developer.mozilla.org/en/JavaScript/Reference
+
+
+
+Array = start the index, check the condition, use the index to access the current element, increment the index
+
+Ex. 
+var i = 0; 
+while (i < myArray.length) {
+	alert("The value is" : + myArray[i]);
+	i++;
+}
+
+
+
+Ex. 
+for (var i = 0; i < myArray.length; i++) {
+	total = total + myArray[i];
+}
+
+alert("The total is: " + total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
