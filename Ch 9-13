@@ -141,4 +141,61 @@ var myArray = [1,2,3,4,5];
 
 
 
+MEMORY MANAGEMENT
+- allocate memory > create object > use object > free memory 
 
+
+- If you don't free the memory, there will be a memory leak and the program can crash.
+
+- Dangling pointer can cause the program to crash.
+
+
+- Reference Counting = keep a counter of who is using the object
+
+
+- Garbage Collection (In Java, C#) = the system itself keeps track of how much memory is being used. If it is not relevant, the system will clear it. 
+
+
+- Automatic (JavaScript) = No control on how memory will be cleared. 
+
+
+
+ALGORITHM = A series of steps to accomplish a task.
+
+Ex. 
+Sorting  = Compare numbers, then organize the numbers from low to high (aka 'bubble sort').
+- Bubble sort is inefficient
+- There are many sorting algorithms (merge sort, selection sort, counting sort, pancake sort, cocktail sort)
+
+
+
+
+MULTITHREADING = doing multiple things inside one program 
+
+- Instead of calling a function normally, you call it to start on another thread. The main thread continues processing. 
+
+- Multithreads saving to the same file is bad, because of limited resources.
+ 
+
+
+JAVA
+Java Class Library = A lot of libraries written already 
+- cross-platform ("write once, run anywhere")
+
+
+RUBY 
+- Everything is an object
+- Need an Interpreter
+- Friendly for beginners 
+- Cross-platform
+- Web apps: Ruby on Rails
+- Good for writing small utilities on the desktop
+- IDE: TextMate, RubyMine
+- Website: rubyonrails.org, ruby-lang.org 
+
+
+PYTHON 
+- Cross-platform
+- Web apps
+- IDE: Eclipse (PyDev extension), Komodo
+- Website: python.org
