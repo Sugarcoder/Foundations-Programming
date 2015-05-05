@@ -1,0 +1,65 @@
+OBJECT-ORIENTED DESIGN 
+- Collect use cases, user stories, and other written requirements of the app. 
+
+
+- Identify class relationships 
+
+
+CLASS DIAGRAM
+- Class name = named in singular, uppercase
+- Attributes = ex. name: string, isActive: boolean, launchDate: date, itemNumber: integer
+- Operations = ex. getName(): string, setActive(boolean), getProductDetails(): string, displayProduct()
+
+
+
+Example format: 
+- Class name
+- Instance variables
+- Methods 
+  public String fire() { 
+   return "Boom!"; 
+  }
+
+
+- Inheritances = 'extends'
+
+- @overriding = a class replacing the methods of the superclass 
+
+
+Calling a method in the superclass (parent class)
+- super.doSomething();
+
+
+INTERFACE
+- A list of method signatures, its like signing a contract (must use certain methods)
+- You can use many methods in a class just by using the interface
+- interface Printable {
+	// method signatures
+	void print(); 
+}
+
+
+Ex. 
+class MyClass implements Printable {
+}
+
+
+UML Diagram help you organize your thoughts for the program you want to design. 
+
+
+
+DRY = Don't repeat yourself 
+
+
+YAGNI = You ain't gonna need it
+- Only solve the problem that you know exist
+
+
+- Code Smells = Code may be valid, but there is something about it that doesn't smell right. 
+Ex. 
+- A long method (need to be split up into multiple methods)
+- A long identifier
+- Pointless comments (comments that are longer than the code)
+- God object
+- Feature envy = a class seems to do very little except use all the methods of one other class
+
