@@ -1,0 +1,144 @@
+STYLE GUIDELINES
+- Readable
+- Consistent
+- Accepted best practices
+
+
+
+JavaScript Naming Conventions
+
+- Variables & functions = camelcase (lowercase first, uppercase later), other styles is using an underscore between 2 words
+
+- Curly braces = { 
+} else {
+}
+
+
+- Define your functions before you call them! 
+
+
+Simple Rules: 
+- Use camelcase
+- Open curly brace on the same line
+- Define your functions before you call them
+- Always use semicolons to end a statement
+- Always use 'var' when declaring a variable
+
+
+
+PSEUDOCODE 
+Pseudocode = Write your instructions in plain English 
+- Can you read the pseudocode? Does it make sense?
+
+
+- Define the structure in the code
+
+
+
+DOM = Document Object Model 
+
+Document = web page (one is the browser view, one is the HTML code) 
+
+Object = elements, components, pieces of the document
+
+Model = An agreed-upon set of terms
+
+
+
+var headline = document.getElementById("mainHeading")
+
+headline.innerHTML = "Wow, a new headline";
+
+
+
+Event handlers or Event listeners = A function that is waiting for an event to happen.
+
+
+Event handler functions are pre-written terms
+Example: onLoad, onClick, onMouseOver, onFocus, onBlur
+
+Ex.
+myelement.onclick = function() {
+	// your event handler code
+};
+
+
+var headline = document.getElementById("mainHeading")
+
+headline.onclick = function() {
+	headline.innerHTML = "You clicked a new headline";
+}
+
+
+
+
+Firebug = Free web browser debugger 
+
+- Configure it in Firefox tools ("Web developer")
+- Console tab: (enable), Script tab: (enable)
+
+
+
+CLASS 
+- A blueprint, the definition, the description
+- Ex. Restaurant, review, user, textbox, button
+
+- Attributes (aka Properties) = Ex. name, height, weight, gender age
+- Behaviors (aka Methods) = walk, run, jump, speak, sleep
+
+
+- 'Class' is just a description of something
+- No need for object unless you are going to make something with it
+
+
+- One 'class' can creat multiple objects
+
+- Encapsulating classes = self-contained units
+
+
+
+OBJECTS 
+- Independent of each other
+- Has methods and properties 
+
+Ex. 
+var myArray = [1,2,3,4,5];
+var myRE = /hello/;
+
+
+Ex.
+var today = new Date();
+var y2k = new Date(2000,0,1);
+
+today.getMonth();  // returns 0-11 
+today.setMonth(5);
+today.setDay(0);
+
+
+
+PRIMITIVES (only store a value)
+Ex. 
+var myNumber = 123; 
+var isValid = true; 
+
+
+
+- Math object is a pre-defined object in JavaScript (can look in javaScript reference guide)
+
+
+
+- Use the name of the object when you create it 
+- Use a new object based on a class
+
+
+var myArray = new Array(1,2,3); 
+OR
+var myArray = [1,2,3,4,5];
+
+
+- If a class is already coded by someone else, you don't have to write the behavior.
+
+
+
+
+
